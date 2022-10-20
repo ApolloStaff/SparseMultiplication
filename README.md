@@ -1,2 +1,2 @@
-# SparseMultiplication
-A basic program that multiplies two sparse polynomials. This program doesn't feature any kind of function declaration and definition since I am working with two polynomials. Functions can be added to read, display and multiply these polynomials if your usecase involves more than two matrices.
+# Sparse Polynomial Multiplication
+Two sparse polynomials are multiplied by this simple programme. Since I am using two polynomials, this programme lacks any form of function declaration or definition. If your use case involves more than two polynomials, additional functions can be added to read, display, and multiply these polynomials.
