@@ -27,7 +27,7 @@ int main()
 		printf("Enter the coefficient(%d): ", i + 1);
 		scanf("%d", &b[i].coeff);
 		printf("Enter the exponent(%d): ", i + 1);
-		scanf("%d", &b[i].expo);        /* only statement in loop */
+		scanf("%d", &b[i].expo);       
 	}
 	printf(" \nThe first polynomial is: ");
 	printf("%d(x^%d)",a[0].coeff,a[0].expo);
@@ -41,8 +41,9 @@ int main()
 	{
 		printf("+%d(x^%d)", b[k].coeff, b[k].expo);
 	}
-	struct poly c[t1 + t2];
-	for (int i = 0; i < t1 + t2; i++) 
+	int t3=t1+t2;
+	struct poly c[100];
+	for (int i = 0; i < t3; i++) 
 	{
 		c[i].coeff = 0;
 		c[i].expo = 0;
@@ -65,7 +66,7 @@ int main()
 	}
 	printf(" \nResultant polynomial: ");
 	printf("%d(x^%d)",c[0].coeff,c[0].expo);
-	for (int k = 1; k < t1 + t2; k++) 
+	for (int k = 1; k < t3; k++) 
 	{
 		printf("+%d(x^%d)", c[k].coeff, c[k].expo);
 	}
