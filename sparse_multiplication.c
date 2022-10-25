@@ -66,12 +66,6 @@ int main()
 		}
 
 	}
-	printf(" \nResultant polynomial: ");
-	printf("%d(x^%d)", c[0].coeff, c[0].expo);
-	for (int k = 1; k < t3; k++)
-	{
-		printf("+%d(x^%d)", c[k].coeff, c[k].expo);
-	}
 	for (i = 0; c[i].expo != 0; i++)
 	{
 		for (j = i + 1; c[j].expo != 0; j++)
